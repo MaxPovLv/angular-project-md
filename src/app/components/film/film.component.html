@@ -1,0 +1,5 @@
+<a routerLink="/film-detail" [state]="{data:film}">
+  <div><img src="https://image.tmdb.org/t/p/w400/{{film.poster_path}}" alt="movie"></div>
+  <div class="txt">Name: {{film.title}}</div>
+  <div class="txt2">Rating: {{film.vote_average}}</div>
+</a>

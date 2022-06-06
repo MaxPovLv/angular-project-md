@@ -1,0 +1,13 @@
+<div class="container">
+  <app-genres></app-genres>
+  <div class="cards">
+    <div class="card" *ngFor="let film of films">
+      <a routerLink="/film-detail" [state]="{data:film }">
+        <img src="https://image.tmdb.org/t/p/w400{{film.poster_path}}" alt="movie">
+        <div class="txt">Name: {{film.title}}</div>
+        <div class="txt2">Rating: {{film.vote_average}}</div>
+      </a>
+    </div>
+    <app-pagination class="pagination"></app-pagination>
+  </div>
+</div>

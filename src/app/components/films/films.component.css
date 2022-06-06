@@ -1,0 +1,12 @@
+.wrap{
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+  grid-template-columns: repeat(5, 240px);
+  grid-template-rows: repeat(4, 1fr);
+  margin-top: 70px;
+  justify-content: center;
+}
+.movie{
+  flex: 0 0 18%;
+}

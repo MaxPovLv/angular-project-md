@@ -1,0 +1,15 @@
+<div *ngIf="filmDetails" class="wrap">
+  <img class="backdrop" src="https://image.tmdb.org/t/p/original/{{filmDetails.backdrop_path}}" alt="movie">
+  <div class="container">
+    <div><img src="https://image.tmdb.org/t/p/w400/{{filmDetails.poster_path}}" alt="movie" class="poster"></div>
+    <div class="info">
+      <div>Title: {{filmDetails.title}}</div>
+      <div>Language: {{filmDetails.original_language|uppercase}}</div>
+      <div>Genres: <span *ngFor="let genre of genresById">{{genre.name}} </span></div>
+      <div>Overview: {{filmDetails.overview}}</div>
+      <div>Adult: {{filmDetails.adult}}</div>
+      <div>Vote average: {{filmDetails.vote_average}}</div>
+      <div>Vote count: {{filmDetails.vote_count}}</div>
+    </div>
+  </div>
+</div>

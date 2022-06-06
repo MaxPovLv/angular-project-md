@@ -1,0 +1,34 @@
+.wrap{
+  height: 540px;
+}
+.backdrop{
+  position: absolute;
+  opacity: 0.7;
+  object-position: top;
+  max-width: 100%;
+  height: auto;
+  z-index: -2;
+}
+.poster{
+  height: 600px;
+  padding-top: 3px;
+  box-sizing: border-box;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+.info{
+  width: 800px;
+  height: 540px;
+  background: #f6f6f6;
+  padding: 30px;
+  opacity: 0.8;
+  font-size: 20px;
+  z-index: -1;
+}
+.info div{
+  margin: 10px;
+}
